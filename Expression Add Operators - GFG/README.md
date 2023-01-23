@@ -1,0 +1,48 @@
+# Expression Add Operators
+## Hard
+<div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a string <strong>S</strong> that contains only digits and an integer <strong>target</strong>, return <strong>all possibilities</strong>&nbsp;strings to insert the binary operator <strong>' + '</strong>, <strong>' - '</strong> , and/or <strong>' * '</strong> between the digits of <strong>S</strong> so that the resultant expression evaluates to the <strong>target</strong> value.</span></p>
+
+<p><span style="font-size:18px">Note : Operands in the returned expressions <strong>should not</strong> contain leading zeros.</span></p>
+
+<p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
+
+<div style="background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#222426; --darkreader-inline-border-top:#3e4446; --darkreader-inline-border-right:#3e4446; --darkreader-inline-border-bottom:#3e4446; --darkreader-inline-border-left:#3e4446;"><span style="font-size:18px"><strong>Input:</strong><br>
+S = "123"<br>
+target = 6<br>
+<strong>Output:&nbsp;</strong>{ "1*2*3", "1+2+3"}<br>
+<strong>Explanation:</strong>&nbsp;Both "1*2*3" and "1+2+3" evaluate to 6.</span></div>
+
+<p><br>
+<span style="font-size:18px"><strong>Example 2:</strong></span></p>
+
+<div style="background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#222426; --darkreader-inline-border-top:#3e4446; --darkreader-inline-border-right:#3e4446; --darkreader-inline-border-bottom:#3e4446; --darkreader-inline-border-left:#3e4446;"><span style="font-size:18px"><strong>Input:</strong><br>
+S = "232"<br>
+target = 8<br>
+<strong>Output:&nbsp;</strong>{ "2*3+2", "2+2*3"}<br>
+<strong>Explanation:</strong>&nbsp;Both "2*3+3" and "2+2*3" evaluate to 8.</span></div>
+
+<p>&nbsp;</p>
+
+<p><strong>Example 3:</strong></p>
+
+<div style="background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#222426; --darkreader-inline-border-top:#3e4446; --darkreader-inline-border-right:#3e4446; --darkreader-inline-border-bottom:#3e4446; --darkreader-inline-border-left:#3e4446;"><span style="font-size:18px"><strong>Input:</strong><br>
+S = "3456237490"<br>
+target = 9191<br>
+<strong>Output:&nbsp;</strong>{ }&nbsp;<br>
+<strong>Explanation:</strong>&nbsp;There are no expressions that can be created from "3456237490"&nbsp; to evaluate to 9191.</span></div>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:18px"><strong>Your Task:</strong><br>
+You don't need to read input or print anything. Your task is to complete the function <strong>addOperators()</strong>&nbsp;which takes string <strong>S</strong> and integer <strong>target</strong> as parameters and return a list&nbsp;of strings which contains all valid possibilities.</span></p>
+
+<p><span style="font-size:18px"><strong>Expected Time Complexity:</strong>&nbsp;O(|S|*4<sup>|</sup><sup>S|</sup>)<br>
+<strong>Expected Auxiliary Space:</strong>&nbsp;O(|s|*3<sup>|S|</sup>)</span></p>
+
+<p><span style="font-size:18px"><strong>Constraints:</strong><br>
+1 ≤ |S|&nbsp;≤ 10<br>
+S consists of only digits.<br>
+-2<sup>31&nbsp;</sup>≤&nbsp;target&nbsp;≤&nbsp;2<sup>31</sup>-1</span></p>
+
+<p>&nbsp;</p>
+</div>
