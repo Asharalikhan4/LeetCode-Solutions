@@ -32,40 +32,21 @@ class Driverclass
 
 
 
-
 class Solution
 {
     //Function to check if brackets are balanced or not.
     static boolean ispar(String x)
     {
         // add your code here
-        Stack<Character> openPrnthss = new Stack<Character>();
-        
-        for (int i = 0; i < x.length(); i++)
-        {
-            char ch = x.charAt(i);
-            if (ch == '(' || ch == '[' || ch == '{')
-            {
-                openPrnthss.push(ch);
-            }
-            else
-            {
-                // If a closing bracket is recieved with 
-                // 0 opening brackets in the stack, then return false
-                if (openPrnthss.isEmpty())
-                    return false;
-                char sym = openPrnthss.peek();
-                if (ch == ')' && sym == '(')
-                    openPrnthss.pop();
-                else if (ch == ']' && sym == '[')
-                    openPrnthss.pop();
-                else if (ch == '}' && sym == '{')
-                    openPrnthss.pop();
-                else 
-                    return false;
-            }
-        }
-        
-        return (openPrnthss.isEmpty())? true : false;
+        Stack<Character> stk = new Stack<>();
+for(int i=0;i<=x.length()-1;i++){
+if(stk.empty()) stk.push(x.charAt(i));
+else if(!stk.empty() && stk.peek() == '{' && x.charAt(i) == '}') stk.pop();
+else if(!stk.empty() && stk.peek() == '[' && x.charAt(i) == ']') stk.pop();
+else if(!stk.empty() && stk.peek() == '(' && x.charAt(i) == ')') stk.pop();
+else stk.push(x.charAt(i));
+}
+if(stk.empty()) return true;
+return false;
     }
 }
