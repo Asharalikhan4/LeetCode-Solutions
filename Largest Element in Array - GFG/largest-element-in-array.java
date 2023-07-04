@@ -35,15 +35,15 @@ class GFG {
 //User function Template for Java
 
 class Compute {
-    
     public int largest(int arr[], int n)
     {
-        int sum = 0;
+        // Code here
+        int largestNumber = arr[0];
         for(int i = 0; i < n; i++){
-            if(sum < arr[i]){
-                sum = arr[i];
+            if(arr[i] > largestNumber){
+                largestNumber = arr[i];
             }
         }
-        return sum;
+        return largestNumber;
     }
 }
