@@ -61,21 +61,21 @@ class Solution
     long power(int N,int R)
     {
         //Your code here
-        long mod = 1000000007;
-        long rev = N;
+        long MOD = 1000000007;
+
+        if (R == 0)
+            return 1;
+
         long ans = 1;
-        long pow = R;
-        while(pow>0){
-            if(pow%2==0){
-                rev = ((rev)*(rev))%mod;
-                pow = pow/2;
-            }
-            else{
-                ans = (ans*(rev))%mod;
-                pow = pow-1;
-            }
+        long temp = power(N, R / 2);
+
+        if (R % 2 == 0) {
+            ans = (temp % MOD * temp % MOD) % MOD;
+        } else {
+            ans = (N % MOD * temp % MOD * temp % MOD) % MOD;
         }
-        return ans%mod;
+
+        return ans;
     }
 
 }
