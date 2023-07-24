@@ -119,8 +119,8 @@ class GfG
 		    temp = temp.next;
 		    pos--;
 		}
-		insert.prev = temp;
 		insert.next = temp.next;
 		temp.next = insert;
+		insert.prev = temp;
 	}
 }
