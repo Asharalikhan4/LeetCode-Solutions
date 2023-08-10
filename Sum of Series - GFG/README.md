@@ -11,8 +11,8 @@
 <pre><span style="font-size: 18px;"><strong>Input:
 </strong>N = 5
 <strong>Output:</strong> 15
-<strong>Explanation:</strong> For n = 5, sum will be 15
-+ 2 + 3 + 4 + 5 = 15.
+<strong>Explanation:</strong> For n = 5, sum will be 15.
+1 + 2 + 3 + 4 + 5 = 15.
 </span></pre>
 <p><span style="font-size: 18px;"><strong>Your Task:</strong><br>Complete the function <strong>seriesSum()</strong>&nbsp;which takes&nbsp;single&nbsp;integer&nbsp;<strong>n</strong>,&nbsp;as input parameters&nbsp;and returns an integer denoting the answer.&nbsp;You don't need to print the answer or take inputs.</span></p>
 <p><span style="font-size: 18px;"><strong>Expected Time Complexity:</strong>&nbsp;O(1)<br><strong>Expected Auxiliary Space:</strong>&nbsp;O(1)</span></p>
