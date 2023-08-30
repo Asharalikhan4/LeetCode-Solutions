@@ -22,13 +22,14 @@ class GFG {
 class Solution {
     static String armstrongNumber(int n){
         // code here
-        int arm = 0, num = n;
+        int num = n, armNum = 0;
         while(num > 0){
             int temp = num%10;
-            arm = arm+(temp*temp*temp);
+            int val = temp*temp*temp;
+            armNum = armNum + val;
             num = num/10;
         }
-        if(n == arm){
+        if(armNum == n){
             return "Yes";
         }
         return "No";
