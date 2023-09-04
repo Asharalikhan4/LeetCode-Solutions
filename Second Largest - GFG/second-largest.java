@@ -3,7 +3,7 @@
 
 
 
-
+import java.util.stream.Collectors; 
 import java.util.*;
 import java.io.*;
 
@@ -35,17 +35,15 @@ public class Main {
 class Solution {
     int print2largest(int arr[], int n) {
         // code here
-        int flrg=-1,slrg=Integer.MIN_VALUE;
-        
-        for(int i=0;i<n;i++){
-            
-            if(arr[i]>flrg){
-                slrg = flrg;
-                flrg = arr[i];
+        int largest = -1, secondLargest = Integer.MIN_VALUE;
+        for(int i = 0; i < n; i++){
+            if(arr[i] > largest){
+                secondLargest = largest;
+                largest = arr[i];
+            } else if(arr[i] > secondLargest && arr[i] < largest){
+                secondLargest = arr[i];
             }
-            else if(arr[i]>slrg && arr[i]!=flrg) slrg = arr[i];
-            
         }
-        return slrg;
+        return secondLargest;
     }
 }
