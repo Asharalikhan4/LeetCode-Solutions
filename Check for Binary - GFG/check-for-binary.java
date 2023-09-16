@@ -32,12 +32,10 @@ class GfG
 	boolean isBinary(String str)
 	{
 	  //Your code here
-	  int n = 0;
-	  while(n != str.length()){
-	      if(str.charAt(n) != '0' && str.charAt(n) != '1'){
+	  for(int i = 0; i < str.length(); i++){
+	      if(str.charAt(i) != '0' && str.charAt(i) != '1'){
 	          return false;
 	      }
-	      n++;
 	  }
 	  return true;
 	}
