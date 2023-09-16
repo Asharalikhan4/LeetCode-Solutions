@@ -31,7 +31,14 @@ class Solution
     String modify(String S)
     {
         // your code here
-        S = S.replaceAll("\\s","");
-        return S;
+        StringBuilder ans = new StringBuilder();
+        for(int i = 0; i < S.length(); i++){
+            if(S.charAt(i) == ' '){
+                continue;
+            } else {
+                ans.append(S.charAt(i));
+            }
+        }
+        return ans.toString();
     }
 }
