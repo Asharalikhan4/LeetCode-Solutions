@@ -46,11 +46,22 @@ class Solution
     public static boolean areRotations(String s1, String s2 )
     {
         // Your code here
-        if(s1.length() != s2.length()){
+        int s1len = s1.length(), s2len = s2.length();
+        if(s1len != s2len){
             return false;
         }
-        String str = s1+s1;
-        return str.contains(s2);
+        for(int i = 0; i < s1len; i++){
+            boolean same = true;
+            for(int k = 0; k < s1len; k++){
+                if(s1.charAt((i+k)%s1len) != s2.charAt(k)){
+                    same = false;
+                    break;
+                }
+            }
+            if(same == true){
+                return true;
+            }
+        }
+        return false;
     }
-    
 }
