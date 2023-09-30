@@ -70,9 +70,9 @@ class MyQueue {
 		if(front == rear){
 		    return -1;
 		}
-		int ans = arr[front];
+		int temp = arr[front];
 		front++;
-		return ans;
+		return temp;
 	} 
 }
 
