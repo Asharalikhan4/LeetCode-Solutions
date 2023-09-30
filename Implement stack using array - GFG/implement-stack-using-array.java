@@ -62,6 +62,9 @@ class MyStack
     void push(int a)
 	{
 	    // Your code here
+	    if(top > 1000){
+	        return;
+	    }
 	    top++;
 	    arr[top] = a;
 	} 
@@ -73,8 +76,8 @@ class MyStack
         if(top == -1){
             return -1;
         }
-        int val = arr[top];
+        int temp = arr[top];
         top--;
-        return val;
+        return temp;
 	}
 }
