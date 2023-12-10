@@ -72,16 +72,16 @@ function main() {
 class Solution{
     print2largest(arr,n){
         //code here
-        let largest = -1, secondLargest = 0;
-        for(let num of arr){
-            if(num > largest){
-                secondLargest = largest;
-                largest = num;
-            } else if (num > secondLargest && num < largest){
-                secondLargest = num;
+        let largestNumber = -1, secondLargestNumber = -1;
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] > largestNumber){
+                secondLargestNumber = largestNumber;
+                largestNumber = arr[i];
+            } else if(arr[i] > secondLargestNumber && arr[i] !== largestNumber){
+                secondLargestNumber = arr[i];
             }
         }
-        return secondLargest;
+        return secondLargestNumber;
     }
 }
 
