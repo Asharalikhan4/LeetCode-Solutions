@@ -64,9 +64,15 @@ function main() {
 class Solution {
     largest(arr, n) {
         // write your code here
-        if(arr.length === 0){
-            return undefined;
+        if(n === 0){
+            return;
         }
-        return Math.max(...arr);
+        let largestElement = arr[0];
+        for(let i = 1; i < n; i++){
+            if(arr[i] > largestElement){
+                largestElement = arr[i];
+            }
+        }
+        return largestElement;
     }
 }
