@@ -39,10 +39,12 @@ Collection of LeetCode and Geeks for geeks questions answer to ace the coding in
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0283-move-zeroes](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/0283-move-zeroes) |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 ## Greedy
 |  |
 | ------- |
 | [2029-stone-game-ix](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/2029-stone-game-ix) |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 ## Minimax
 |  |
 | ------- |
@@ -67,8 +69,13 @@ Collection of LeetCode and Geeks for geeks questions answer to ace the coding in
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/0070-climbing-stairs) |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 ## Memoization
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/0070-climbing-stairs) |
+## String
+|  |
+| ------- |
+| [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Asharalikhan4/LeetCode-and-GFG-Solutions/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 <!---LeetCode Topics End-->
